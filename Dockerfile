@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 # Copia el código de la aplicación al contenedor Copia los archivos que coincidan con el
 #patrón package*.json desde el sistema de archivos del host hasta el directorio de trabajo
 #actual del contenedor
-COPY package*.json ./
+COPY package.json ./
 # Instala las dependencias de la aplicación
 RUN npm install
 # Copia todos los archivos y carpetas del directorio actual en el sistema de archivos del
